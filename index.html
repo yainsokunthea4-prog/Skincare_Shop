@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sokunthea Skincare Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="top-bar">
+      <div class="brand-row">
+        <div class="brand-logo">
+          <span class="logo-mark">S</span>
+          <div>
+            <strong>Sokunthea Skincare Shop</strong>
+            <p>Beauty Boutique</p>
+          </div>
+        </div>
+      </div>
+      <nav class="top-nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+    </div>
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">Clean Beauty</span>
+          <h1>Skincare tailored to glow naturally.</h1>
+          <p>Discover gentle formulas sold in Cambodia's skincare markets, crafted for hydration, balance, and brighter skin.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#products">Shop Best Sellers</a>
+            <button class="button button-secondary" id="learnMoreBtn">Explore Benefits</button>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="highlight-card">
+    <img src="image/B4.jpg" ,alt="Natural skincare serum bottle" class="product-image">
+    </div>
+          
+        </div>
+      </section>
+
+      <section id="benefits" class="section benefits">
+        <div class="section-heading">
+          <p class="eyebrow">Our promise</p>
+          <h2>Pure ingredients for calm, glowing skin</h2>
+        </div>
+        <div class="card-grid">
+          <article class="feature-card">
+            <h3>Dermatologist approved</h3>
+            <p>Formulated without harsh ingredients, safe for sensitive and combination skin.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Hydration boost</h3>
+            <p>Natural actives keep skin soft while strengthening the moisture barrier.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Sustainable beauty</h3>
+            <p>Eco-friendly packaging and cruelty-free formulas designed to care for skin and planet.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="section-heading">
+          <p class="eyebrow">About us</p>
+          <h2>Clean skincare for every routine</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>Simple daily rituals</h3>
+            <p>From cleanser to serum, every step is designed to support healthy, radiant skin without overload.</p>
+          </div>
+          <div class="about-card">
+            <h3>Ingredients you can trust</h3>
+            <p>Our formulas are free from parabens, sulfates, and synthetic fragrances so your skin stays calm.</p>
+          </div>
+          <div class="about-card">
+            <h3>Tailored categories</h3>
+            <p>Find the right products for cleanser, toner, serum, sunscreen, night cream, and more.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="section products">
+        <div class="section-heading">
+          <h2>Our complete skincare collection</h2>
+        </div>
+
+        <div class="product-toolbar">
+          <div class="search-container">
+            <div class="search-field-wrapper">
+              <span class="search-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 19C15.9706 19 20 14.9706 20 10C20 5.02944 15.9706 1 11 1C6.02944 1 2 5.02944 2 10C2 14.9706 6.02944 19 11 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 22L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <input type="text" id="searchInput" class="search-field" placeholder="Search products by name...">
+            </div>
+            <button id="searchBtnProduct" class="button button-primary">Search</button>
+            <button id="cartToggle" class="button button-secondary cart-button" type="button">
+              Cart <span id="cartCount">0</span>
+            </button>
+          </div>
+
+          <div class="category-filter">
+          <button class="filter-btn active" data-category="all">All Products</button>
+          <button class="filter-btn" data-category="cleanser">Cleanser</button>
+          <button class="filter-btn" data-category="toner">Toner</button>
+          <button class="filter-btn" data-category="serum">Serum</button>
+          <button class="filter-btn" data-category="sunscreen">Sunscreen</button>
+          <button class="filter-btn" data-category="night-cream">Night Cream</button>
+          <button class="filter-btn" data-category="other">Others</button>
+        </div>
+      </div>
+        <div id="productGrid">
+          <!-- Cleanser Category -->
+          <div class="product-category">
+            <h3 class="category-title">Cleanser</h3>
+            <div class="category-grid">
+              <article class="product-card" data-category="cleanser">
+                <img src="image/1E.jpg" alt="Ample N Cleanser" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Cleanser</span>
+                  <h3>Ample N Cleanser</h3>
+                  <p>Gentle daily cleanser with natural ingredients for soft skin.</p>
+                  <span class="price">$8</span>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="cleanser">
+                <img src="image/2E.jpg" alt="Skin1004 Cleanser" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Cleanser</span>
+                  <h3>Skin1004 Cleanser</h3>
+                  <p>Hydrating cleanser with centella asiatica for soothing care.</p>
+                  <span class="price">$8.5</span>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="cleanser">
+                <img src="image/3E.jpg" alt="Cerave Cleanser" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Cleanser</span>
+                  <h3>Cerave Cleanser</h3>
+                  <p>Moisturizing cleanser with ceramides for barrier repair.</p>
+                  <span class="price">$12</span>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="cleanser">
+                <img src="image/4E.jpg" alt="Cetaphil Cleanser" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Cleanser</span>
+                  <h3>Cetaphil Cleanser</h3>
+                  <p>Mild, non-irritating cleanser for sensitive skin.</p>
+                  <span class="price">$13.5</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Toner Category -->
+          <div class="product-category">
+            <h3 class="category-title">Toner</h3>
+            <div class="category-grid">
+              <article class="product-card" data-category="toner">
+                <img src="image/6E.jpg" alt="Ample N Toner" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Toner</span>
+                  <h3>Ample N Toner</h3>
+                  <p>Refreshing toner with niacinamide for balanced skin.</p>
+                  <span class="price">$9</span>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="toner">
+                <img src="image/toner2.jpg" alt="Skin1004 Toner" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Toner</span>
+                  <h3>Skin1004 Toner</h3>
+                  <p>Soothing toner with centella for calming hydration.</p>
+                  <span class="price">$10</span>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="toner">
+                <img src="image/toner3.jpg" alt="Anua Toner" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Toner</span>
+                  <h3>Anua Toner</h3>
+                  <p>Heartleaf toner for brightening and moisturizing.</p>
+                  <span class="price">$12</span>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="toner">
+                <img src="image/toner4.jpg" alt="Besoma Toner" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Toner</span>
+                  <h3>Besoma Toner</h3>
+                  <p>Luxury toner with hyaluronic acid for deep hydration.</p>
+                  <span class="price">$20</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Serum Category -->
+          <div class="product-category">
+            <h3 class="category-title">Serum</h3>
+            <div class="category-grid">
+              <article class="product-card" data-category="serum">
+                <img src="image/sr1.jpg" alt="Skin 1004 Serum" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Serum</span>
+                  <h3>Skin 1004 Serum</h3>
+                  <p>Luxury ginseng serum for radiant and youthful skin.</p>
+                  <span class="price">$9.50</span>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="serum">
+                <img src="image/sr2.jpg" alt="APLB Serum" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Serum</span>
+                  <h3>APLB Serum</h3>
+                  <p>Cicapair serum for soothing and repairing damaged skin.</p>
+                  <span class="price">$5</span>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="serum">
+                <img src="image/sr3.jpg" alt="Anua Serum" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Serum</span>
+                  <h3>Anua Serum</h3>
+                  <p>Centella asiatica serum for calming and repairing skin.</p>
+                  <span class="price">$8</span>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="serum">
+                <img src="image/sr4.jpg" alt="Vitamin C Serum" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Serum</span>
+                  <h3>Vitamin C Serum</h3>
+                  <p>Powerful antioxidant serum for brightening and firming.</p>
+                  <span class="price">$11</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Sunscreen Category -->
+          <div class="product-category">
+            <h3 class="category-title">Sunscreen</h3>
+            <div class="category-grid">
+              <article class="product-card" data-category="sunscreen">
+                <img src="image/sc1.jpg" alt="Dr.Shets Sunscreen" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Sunscreen</span>
+                  <h3>Dr.Shets Sunscreen</h3>
+                  <p>Reef-safe mineral protection with a lightweight, non-greasy finish.</p>
+                  <span class="price">$7.50</span>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="sunscreen">
+                <img src="image/sc2.jpg" alt="Sun Soop otion" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Sunscreen</span>
+                  <h3>Sun Soop otion</h3>
+                  <p>Daily sun protection infused with hydrating botanicals.</p>
+                  <span class="price">$4.50</span>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="sunscreen">
+                <img src="image/sc3.jpg" alt="UV sunscreen" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Sunscreen</span>
+                  <h3>UV sunscreen</h3>
+                  <p>Buildable tint sunscreen for even coverage and glow.</p>
+                  <span class="price">$3</span>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="sunscreen">
+                <img src="image/sc4.jpg" alt="Youth Face Sunscreen" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Sunscreen</span>
+                  <h3>Youth Face Sunscreen</h3>
+                  <p>Mattifying sunscreen gel ideal for oily and combination skin.</p>
+                  <span class="price">$2.50</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Night Cream Category -->
+          <div class="product-category">
+            <h3 class="category-title">Night Cream</h3>
+            <div class="category-grid">
+              <article class="product-card" data-category="night-cream">
+                <img src="image/nc1.jpg" alt="Pond night cream" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Night Cream</span>
+                  <h3>PONDS night cream</h3>
+                  <p>Rich overnight recovery cream that restores radiance and softness.</p>
+                  <span class="price">$12.00</span>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="night-cream">
+                <img src="image/nc2.jpg" alt="Cerave Night Cream" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Night Cream</span>
+                  <h3>Cerave Night Cream</h3>
+                  <p>Moisturizing night cream that helps restore the skin's natural barrier.</p>
+                  <span class="price">$15.00</span>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="night-cream">
+                <img src="image/nc3.jpg" alt="Lotus Night Cream" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Night Cream</span>
+                  <h3>Lotus Night Cream</h3>
+                  <p>Rich balm replenishes moisture overnight for softer, firmer skin.</p>
+                  <span class="price">$7.50</span>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="night-cream">
+                <img src="image/nc4.jpg" alt="Restorative Night Cream" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Night Cream</span>
+                  <h3>Cetaphil Night Cream</h3>
+                  <p>Nourishing overnight cream helps skin recover from environmental stress.</p>
+                  <span class="price">$9.50</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Other Products Category -->
+          <div class="product-category">
+            <h3 class="category-title">Other Products</h3>
+            <div class="category-grid">
+              <article class="product-card" data-category="other">
+                <img src="image/m1.jpg" alt="Deep Hydration Sheet Mask" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Mask</span>
+                  <h3>Deep Hydration Sheet Mask</h3>
+                  <p>Single-use sheet mask for instant moisture and glow boost.</p>
+                  <span class="price">$0.50</span>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="other">
+                <img src="image/m2.jpg" alt="Gentle Enzyme Exfoliant" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Exfoliant</span>
+                  <h3>Gentle Enzyme Exfoliant</h3>
+                  <p>Gentle powder exfoliant that buffs away dead skin naturally.</p>
+                  <span class="price">$6.00</span>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="other">
+                <img src="image/m3.jpg" alt="Brightening Eye Cream" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Eye Care</span>
+                  <h3>Brightening Eye Cream</h3>
+                  <p>Lightweight eye cream reduces dark circles and puffiness.</p>
+                  <span class="price">$5.50</span>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="other">
+                <img src="image/m4.jpg" alt="Nourishing Lip Balm" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Lip Care</span>
+                  <h3>Nourishing Lip Balm</h3>
+                  <p>Rich lip balm with botanical butters and vitamin E.</p>
+                  <span class="price">$4.50</span>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="other">
+                <img src="image/m5.jpg" alt="Soothing Face Mist" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Refresh</span>
+                  <h3>Soothing Face Mist</h3>
+                  <p>Cooling facial mist that restores hydration throughout the day.</p>
+                  <span class="price">$10.00</span>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="other">
+                <img src="image/m6.jpg" alt="Silk Sleep Mask" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Sleep Mask</span>
+                  <h3>Silk Sleep Mask</h3>
+                  <p>Gentle overnight mask that helps skin recover while you rest.</p>
+                  <span class="price">$13.00</span>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="other">
+                <img src="image/m7.jpg" alt="Set make-up" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Travel</span>
+                  <h3>Set make-up</h3>
+                  <p>Compact skincare set with essentials for on-the-go radiance.</p>
+                  <span class="price">$25.00</span>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="other">
+                <img src="image/m8.jpg" alt="Vaselin Body Oil" class="product-image">
+                <div class="product-details">
+                  <span class="product-type">Body Care</span>
+                  <h3>Vaselin Body Oil</h3>
+                  <p>Light body oil nourishes skin and leaves a soft, radiant finish.</p>
+                  <span class="price">$6.00</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-section" id="cartSection">
+          <div class="section-heading">
+            <p class="eyebrow">Cart</p>
+            <h2>Your selected products</h2>
+          </div>
+          <div class="cart-panel">
+            <div class="cart-items" id="cartItems">
+              <p class="empty-cart">No items in cart yet. Add a product to begin.</p>
+            </div>
+            <div class="cart-summary">
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <strong id="cartSubtotal">$0.00</strong>
+              </div>
+              <div class="summary-row">
+                <span>Delivery</span>
+                <strong id="deliveryFee">$10.00</strong>
+              </div>
+              <div class="summary-row">
+                <span>Discount</span>
+                <strong id="discountAmount">-$0.00</strong>
+              </div>
+              <div class="summary-row summary-total">
+                <span>Total</span>
+                <strong id="cartTotal">$0.00</strong>
+              </div>
+              <button id="checkoutBtn" class="button button-primary">Checkout Now</button>
+              <button id="clearCartBtn" type="button" class="button button-secondary">Clear Cart</button>
+              <form id="paymentForm" class="payment-form hidden">
+                <h3>Payment details</h3>
+
+                <div class="payment-methods">
+                  <label class="pm-label"><input type="radio" name="paymentMethod" value="card" checked> <span class="pm-icon pm-card">💳</span> Card</label>
+                  <label class="pm-label"><input type="radio" name="paymentMethod" value="cash"> <span class="pm-icon pm-cash">💵</span> Cash on Delivery</label>
+                  <label class="pm-label"><input type="radio" name="paymentMethod" value="qr"> <span class="pm-icon pm-qr">🔳</span> QR Code</label>
+                </div>
+
+                <div class="card-fields">
+                  <input type="text" id="cardName" placeholder="Name on card">
+                  <input type="text" id="cardNumber" placeholder="Card number">
+                  <div class="payment-row">
+                    <input type="text" id="cardExp" placeholder="MM/YY">
+                    <input type="text" id="cardCvc" placeholder="CVC">
+                  </div>
+                </div>
+
+                <div class="qr-fields hidden">
+                  <p>Scan this QR code to pay:</p>
+                  <img id="qrImage" src="image/qr-placeholder.png" alt="QR Code" class="qr-image">
+                </div>
+
+                <div class="pay-actions">
+                  <button type="submit" class="button button-primary">Pay <span id="paymentTotal">$0.00</span></button>
+                  <p id="paymentStatus" class="form-message"></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section testimonials">
+
+      <section id="testimonials" class="section testimonials">
+        <div class="section-heading">
+          <p class="eyebrow">Reviews</p>
+          <h2>Customers love the glow</h2>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=faces" alt="Maya R." class="testimonial-avatar">
+            <p>"My skin feels calmer and more balanced after just one week. The texture is amazing."</p>
+            <strong>— Maya R.</strong>
+          </article>
+          <article class="testimonial-card">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=faces" alt="Elena K." class="testimonial-avatar">
+            <p>"I love the lightweight formulas. The products absorb quickly and my skin looks brighter."</p>
+            <strong>— Elena K.</strong>
+          </article>
+          <article class="testimonial-card">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=faces" alt="Nia S." class="testimonial-avatar">
+            <p>"Beautiful packaging and clean ingredients. The whole routine feels luxurious."</p>
+            <strong>— Nia S.</strong>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="contact-shell">
+          <div class="contact-left">
+            <p class="eyebrow">Contact Us</p>
+            <h2>Send us a message</h2>
+            <p>Have a question about a product or your order? Reach out and we'll respond within 24 hours.</p>
+            <form id="contactForm" class="contact-form">
+              <input id="name" type="text" name="name" placeholder="Name" required>
+              <input id="phone" type="tel" name="phone" placeholder="Phone Number" required>
+              <input id="email" type="email" name="email" placeholder="Email" required>
+              <label class="visually-hidden" for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+              <button class="button button-primary" type="submit">Send</button>
+            </form>
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+          </div>
+
+          <aside class="contact-details">
+            <div class="contact-card">
+              <p class="eyebrow">Need help?</p>
+              <h2>Visit or message us</h2>
+              <p>Find our address, chat on Telegram, or follow us on Facebook for the latest offers.</p>
+            </div>
+
+            <div class="contact-info">
+              <div class="contact-item">
+                <span class="contact-icon">📍</span>
+                <div>
+                  <strong>Address</strong>
+                  <p>Phnom Penh, Cambodia</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon">📞</span>
+                <div>
+                  <strong>Phone</strong>
+                  <p>+855 12 345 678</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 12.5L20 4L14.5 19.5L11.5 15.5L7.5 18.5L4 12.5Z" fill="currentColor"/>
+                    <path d="M4 12.5L10.5 15.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10.5 15.5L15.5 7L20 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <div>
+                  <strong>Telegram</strong>
+                  <p>@GlowSkinKH</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 17.02 5.83 21.13 10.5 21.88V14.89H7.9V12H10.5V9.79C10.5 7.22 11.93 5.98 14.16 5.98C15.17 5.98 16.22 6.15 16.22 6.15V8.68H15.07C13.95 8.68 13.5 9.41 13.5 10.17V12H16.09L15.66 14.89H13.5V21.88C18.17 21.13 22 17.02 22 12Z" fill="currentColor"/>
+                  </svg>
+                </span>
+                <div>
+                  <strong>Facebook</strong>
+                  <p>facebook.com/GlowSkinKH</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
